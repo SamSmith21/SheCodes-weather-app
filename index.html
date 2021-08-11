@@ -16,27 +16,32 @@
   </head>
   <body>
     <div class="container">
-      <h1>🥵Weather Forecast🥶</h1>
-      <p>
-        <a href="#" id="celsius-link">°C</a> or
-        <a href="#" id="fahrenheit-link">°F</a>
-      </p>
-
-      <form id="searchForm">
+      <form id="searchForm" class="mb-3">
         <div class="col-4">
-          <label for="citySearch" class="form-label">Search a city</label>
           <input
-            type="text"
+            type="search"
+            palceholder="Search a city..."
             class="form-control"
             id="citySearch"
             aria-describedby="citySearch"
           />
+          </div>
+
+          <div class="col-3">
+<input
+type="submit" value="search" class="btn btn-primary w-100">
+          </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
       <button id="localButton">or use current location</button>
       <br />
+
+      <p>
+        <a href="#" id="celsius-link">°C</a> or
+        <a href="#" id="fahrenheit-link">°F</a>
+      </p>
 
       <h2>London</h2>
       <br />
