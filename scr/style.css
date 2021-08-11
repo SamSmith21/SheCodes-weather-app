@@ -2,12 +2,28 @@ body {
   background: #fff3e6;
 }
 
-h1 {
-  color: red;
-  text-align: center;
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 6px;
 }
 
 .col {
   font-weight: 600;
   font-size: 20px;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
 }
