@@ -21,10 +21,11 @@
 
       
       <form id="searchForm" class="mb-3">
-        <div class="col-9">
+        <div class="row">
+        <div class="col-6">
           <input
             type="search"
-            palceholder="Search a city..."
+            placeholder="Search a city..."
             class="form-control"
             id="citySearch"
             aria-describedby="citySearch"
@@ -35,17 +36,17 @@
 <input
 type="submit" value="search" class="btn btn-primary w-100">
           </div>
-
+          </form>
+          <div class="col-3">
+      <button type="button" class="btn btn-outline-primary" id="localButton">current location</button>
+      </div>
+</div>
           
         </div>
-      </form>
-      <button id="localButton">or use current location</button>
+      
       <br />
 
-      <p>
-        <a href="#" id="celsius-link">°C</a> or
-        <a href="#" id="fahrenheit-link">°F</a>
-      </p>
+      
 
       <h2>London</h2>
       <br />
@@ -53,12 +54,38 @@ type="submit" value="search" class="btn btn-primary w-100">
         <span id="dateNew"> Sunday, 16:00 </span>
         <br />
         <br />
-        <span id="tempNew"> 18 </span>
-        <br />
-        ⛅
+        
+        <div class="row">
+          <div class="col-6">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Clear">
+<span id="tempNew"> 18 </span>
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+          </div>
+        <div class="col-6">
+          <ul>
+            <li>
+              Precipitation
+            </li>
+            <li>
+              Humidity
+            </li>
+            <li>
+              Wind
+            </li>
+          </ul>
 
-        <br />
+
+        </div>
+
+
+</div>
+  
       </h3>
+
+    
+
+
       <div class="row">
         <div class="col">Tomorrow</div>
         <div class="col">Monday</div>
@@ -66,16 +93,28 @@ type="submit" value="search" class="btn btn-primary w-100">
         <div class="col">Wednesday</div>
         <div class="col">Thursday</div>
       </div>
-      </div>
-      </div>
-    </div>
+      
+<p>
+  This page is coded by
+<a
+      href="https://www.linkedin.com/in/samantha-smith-5014424b/"
+      target="_blank"
+    >
+      Samantha Smith</a
+    >
+
+and is
 
     <a
       href="https://github.com/SamSmith21/SheCodes-weather-app"
       target="_blank"
     >
-      Coding by Samantha Smith</a
+      open sourced on Github</a
     >
+</p>
+</div>
+      </div>
+    </div>
 
     <script src="datatype.js"></script>
   </body>

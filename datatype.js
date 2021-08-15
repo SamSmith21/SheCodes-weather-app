@@ -95,7 +95,7 @@ function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#tempNew");
   let temperatureCelsius = temperatureElement.innerHTML;
-  temperatureElement.innerHTML = `${Math.round(temperatureCelsius - 32)}°C`;
+  temperatureElement.innerHTML = `${temperatureCelsius}°C`;
 }
 
 let celsiuslink = document.querySelector("#celsius-link");
