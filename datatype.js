@@ -25,6 +25,10 @@ let dateNew = document.querySelector("#dateNew");
 
 dateNew.innerHTML = `${day}, ${hour}:${minute}`;
 
+/////////////////////
+
+function displayForecast() {}
+
 ///////////////////
 
 function showTemperature(response) {

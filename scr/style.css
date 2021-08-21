@@ -5,6 +5,7 @@ body {
 li {
   list-style: none;
   text-transform: capitalize;
+  font-size: 16px;
 }
 
 h3 {
@@ -62,4 +63,13 @@ h3 {
 .active:hover {
   text-decoration: none;
   color: black;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
 }
