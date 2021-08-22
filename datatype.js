@@ -27,7 +27,36 @@ dateNew.innerHTML = `${day}, ${hour}:${minute}`;
 
 /////////////////////
 
-function displayForecast() {}
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let daysForecast = ["Thu", "Fri", "Sat", "Sun"];
+  daysForecast.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+          <div class="weather-forecast-date">
+          ${day}
+          </div>
+          <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+          <div class="weather-forecast-temperate">
+            <span class="weather-forecast-temp-max">
+            18 
+            </span>
+            <span class="weather-forecast-temp-min">
+            12
+            </span>
+          </div>
+        
+        
+      </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 ///////////////////
 
@@ -124,3 +153,5 @@ let celsiuslink = document.querySelector("#celsius-link");
 celsiuslink.addEventListener("click", convertToCelsius);
 
 let celsiusTemperature = null;
+
+displayForecast();
