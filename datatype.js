@@ -88,6 +88,9 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
+  let cityNew = document.querySelector("h2");
+
+  cityNew.innerHTML = response.data.name;
 
   celsiusTemperature = Math.round(response.data.main.temp);
 
@@ -129,10 +132,6 @@ function showButtonTemp(response) {
 }
 
 function showPosition(position) {
-  let cityNew = document.querySelector("h2");
-
-  cityNew.innerHTML = `Your current location`;
-
   let longitude = position.coords.latitude;
   let latitude = position.coords.longitude;
 
@@ -141,7 +140,8 @@ function showPosition(position) {
 
   axios.get(`${apiUrlLocal}&appid=${apiKey}`).then(showTemperature);
 }
-function clickButton() {
+function clickButton(event) {
+  event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
