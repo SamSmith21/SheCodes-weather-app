@@ -132,8 +132,8 @@ function showButtonTemp(response) {
 }
 
 function showPosition(position) {
-  let longitude = position.coords.latitude;
-  let latitude = position.coords.longitude;
+  let longitude = position.coords.longitude;
+  let latitude = position.coords.latitude;
 
   let apiKey = "6ae4e841169165189c06e3418b098390";
   let apiUrlLocal = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric`;
